@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <h1 id="title" class="heading">Survey Form</h1>
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name" for="name">Name :</label>
+                <input
+                  type="text" name="name" id="name" class="form-control" placeholder="Enter your name " required
+                />
+              </div><br>
+              <div class="form-group">
+                <label id="email" for="email">Email :</label>
+                <input type="email" name="email" id="email" class="form" placeholder="Enter your Email" required />
+              </div><br>
+              <div class="form-group">
+                <label id="number-label" for="number" Age <span class="clue">Age :</span></label>
+                <input
+                  type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+              </div><br>
+              <div class="form-group">
+                <span>Job Details :</span>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select</option>
+                  <option value="student">Student</option>
+                  <option value="Full Time Job">Full Time Job</option>
+                  <option value="Part Time Job">Part Time Job</option>
+                  <option value="VIP">VIP</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+                <br>
+              <div class="form-group">
+                  <span>Languages Known : </span>
+                <label>
+                  <input
+                    name="user-recommend" value="ENGLISH" type="radio" class="input-radio" checked />ENGLISH</label>
+                <label>
+                  <input name="user-recommend" value="HINDI" type="radio"class="input-radio" />HINDI</label>
+          
+                <label><input name="user-recommend" value="TAMIL" type="radio" class="input-radio" />TAMIL</label>
+              </div>
+                <br>
+              <div class="form-group">
+                <span>Passed out Year :</span>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                  <option disabled selected value>Select an option</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                </select>
+              </div>
+                <br>
+              <div class="form-group">
+                <span>Field :</span>
+          
+                <label
+                  ><input
+                    name="prefer"
+                    value="front-end"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Front-end </label
+                >
+                <label>
+                  <input
+                    name="prefer"
+                    value="back-end"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Back-end</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="data Analyst"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Data Analyst</label>
+                  <br><br>
+              <div class="form-group">
+                <span>Suggestions :</span> <br><br>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+              </div>
+                <br>
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+      
+</body>
+</html>
